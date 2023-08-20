@@ -15,241 +15,109 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   cursor: pointer;
   transition: 0.3s;
 }
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("intro-bg.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  position:relative;
+  width: 100%;
+  max-width: 100%;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+
+
+.container2 .btn {
+  position: absolute;
+  top:7%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #08d5f5;
+  color: white;
+  font-size: 16px;
+  padding: 15px 38px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  text-align: center;
+}
+.container .btn {
+  position: absolute;
+  top:0%;
+  left: 76%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #08d5f5;
+  color: white;
+  font-size: 16px;
+  padding: 15px 28px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  text-align: center;
+}
+.container .btn:hover {
+  background-color: rgb(227, 15, 15);
+}
+
+.container2 .btn:hover {
+  background-color: rgb(227, 15, 15);
+}
 
 
 </style>
 </head>
 <body class="w3-light-grey w3-content" style="max-width:1600px">
 
-<!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
-  <div class="w3-container">
-    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
-      <i class="fa fa-remove"></i>
-    </a>
-    <img src="icon.png" style="width:50%;" class="w3-round"><br><br>
-    <p class="w3-text-grey"></p>
-  </div>
-  <div class="w3-bar-block">
-    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i ></i> چرا ژئومارکتینگ</a>
-    <a href="#ML" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i></i>ژئومارکتینگ و علوم داده</a>
-    <a href="#model" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i ></i>مراحل پیاده سازی طرح های ژئومارکتینگ</a>
-    <a href="#bank" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i  style="font-size:8px"></i>صنایع لوکیشن محور(بانک) </a>
-    <a href="#sdss" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i  style="font-size:8px"></i>  Spatial Decision-Support Systems (SDSS)</a>
-    <a href="#webapp" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i></i> وب اپلیکیشن  </a>
-    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i></i>ارتباط با ما </a>
-    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i ></i>نقشه ها</a> 
-  </div>
-  <div class="w3-panel w3-large">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-  </div>
-</nav>
+
 
 <!-- Overlay effect when opening sidebar on small screens -->
 <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
 <!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:300px">
+<div class="w3-main" style="margin-left:00px">
 
-  <!-- Header -->
-  <header id="portfolio">
-    <a href="#"><img src="" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
-    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+
+  <header >
     <div class="w3-container" dir="rtl">
-    <h1><!--b  style="font-size:18px"> یک نقشه بیش از هزار کلمه می گوید!</b--></h1>
-    <div class="w3-section w3-bottombar w3-padding-16">
-      <a href="#about" onclick="w3_close()"class="w3-bar-item w3-button w3-hover-white"> <button class="w3-button w3-white"> چرا ژئومارکتینگ</button> </a>
-      <a href="#questions" onclick="w3_close()"class="w3-bar-item w3-button w3-hover-white"> <button class="w3-button w3-white"> دوازده سوال و  چالش جدی  فروشگاه های زنجیره ای !</button> </a>
-      <a href="#questions2" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"> <button class="w3-button w3-white">سوالات و چالش های  صنعت خرد فروشی !</button> </a>
-      <a href="https://aahmadi88.github.io/chainmap/" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"><button class="w3-button w3-white"> وب اپلیکیشن صنعت خرده فروشی : فروشگاه ها (Demo)</button></a>
-    </div>
-    </div>
-  </header>
-  
-  <!-- First Photo Grid-->
-  <div class="w3-row-padding">
-    <div class="w3-half">
-      <img img src="MaxProChain3.jpg"  style="width:100%" class="w3-hover-opacity" onclick="onClick(this)" alt="موقعیت احتمالی فروشگاه جدید">
-      <div class="w3-container w3-white">
-        <p></p>
-    </div>
-    </div> 
-    <div class="w3-half">
-      <img src="ChainNearestBlK3.jpg"  style="width:100%" class="w3-hover-opacity" onclick="onClick(this)" alt="نزدیک ترین منازل به فروشگاه ها">
-      <div class="w3-container w3-white">
-        <p></p>
-      </div>
-    </div> 
-    <div class="w3-half">
-      <img src="Billboards.7.jpg"  style="width:100%" class="w3-hover-opacity"onclick="onClick(this)" alt="Billboards">
-      <div class="w3-container w3-white">
-        <p></p>
-      </div>
-    </div>
-    <div class="w3-half">
-      <img src="Demo250M_2.jpg"  style="width:100%" class="w3-hover-opacity" onclick="onClick(this)" alt="توان خرید">
-      <div class="w3-container w3-white">
-        <p></p>
-      </div>
-    </div>
-  </div>
-  
-  <!-- Second Photo Grid-->
-  <div class="w3-row-padding">
-
-    <div class="w3-half">
-      <img src="O.K_Del3.jpg"  style="width:100%" class="w3-hover-opacity" onclick="onClick(this)" alt="افق و کوروش">
-      <div class="w3-container w3-white">
-      </div>
-    </div>
-    <div class="w3-half">
-      <img src="chain_Density3.jpg"  style="width:100%" class="w3-hover-opacity" onclick="onClick(this)" alt="تراکم فروشگاه ها">
-      <div class="w3-container w3-white">
-      </div>
-    </div>
-  </div>
-
-  <!-- Pagination -->
-  <!-- <div class="w3-center w3-padding-32">
-    <div class="w3-bar">
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
-      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
-      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
-    </div>
-  </div> -->
-
- 
-
-    <!-- Modal for full size images on click-->
-  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
-    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
-    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-      <img id="img01" class="w3-image">
-      <p id="caption"></p>
-    </div>
-  </div>
-
-  <!-- چرا ژئومارکتینگ  -->
-
-
-  <div class="w3-container w3-padding-large" style="margin-bottom:32px" dir="rtl"  id="about">
-    <hr style="width:70px;border:5px solid rgb(141, 138, 138)" class="w3-round">
-    <h4><b> چرا ژئومارکتینگ</b></h4>
-    <ul>
-<!--       <li><p style="font-size:20px"> یک نقشه بیش از هزار کلمه می گوید!</p>  -->
-       <li><p style="font-size:20px"> ژئومارکتینگ در بسیار از موارد به عنوان یک سامانه هوش تجاری(BI)  که توانایی تحلیل و ترکیب انواع داده و اطلاعات را دارد، درنظر گرفته می شود   </p> 
-      <li><p style="font-size:20px">	
-        سیستم های ژئومارکتینگ با مدل سازی داده های مکانی و ارتباط آن با بازار مصرف کنندگان کالای خرده فروشی و ارائه آن به شکل نقشه های تحلیلی و توصیفی سیستم های تصمیم گیری توان مضاعف می بخشد. تحلیل گران داده وهمچنین صاحبان کسب و کار می توانند   موقعیت صنعت خود،سطح رقابت و مصرف کنندگان کالا در مناطق مختلف از منظری متفاوت و جامع بررسی کنند. 
-      </p>
-
-      <li><p style="font-size:20px">	مدل ها و نقشه های ژئومارکتینگ به شرکت شما کمک می کند به سوالات منطقه ای و محلی بازار خود پاسخ دهید</p>
-      <li><p style="font-size:20px">
-        این تکنولوژی این امکان را به شما می دهد داده های خود را با انواع نقشه ها تجزیه و تحلیل کنید و شرکت خود را در مقیاس های متفات تجسم کنید
-      </p>
-      <li><p style="font-size:20px">
-        نقشه های تحلیلی : روشی کارآمد برای شبیه سازی بازا، رقابت، گپ ها، یافتن مناطق بالقوه و عوامل پنهان موثر  </p>
-      <li><p style="font-size:20px">
-        اساس ژئومارکتینگ داده های داخلی و خارجی است که دارای مرجع مکانی هستند.این داده ها با کمک سیستم اطلاعات جغرافیایی برروی نقشه های دیجیتال مورد استفاده وتجزیه وتحلیل قرارمی گیرند.      </p>
-      <li><p style="font-size:20px">
-        80 درصد ازکل داده های بسیاری ازشرکت ها دارای یک مرجع جغرافیایی (مکانی محور) است      </p>
-      <li><p style="font-size:20px">
-        حوزه های اصلی کاربرد سیستم های ژئومارکتینگ : توسعه، فروش، بازاریابی و گزارش       </p>
-
-      <li><p style="font-size:20px">
-        اکثرخروجی ها نقشه های دیجیتال هستند که به تیم تحلیل بازار و صاحبان مشاغل اجازه می دهد تا بازار خود را از پلت فرم و منظری متفاوت تجزیه و تحلیل ومشاهده کنند
-      </p>
-      
-    </ul>
-
-
-
-<!-- سوالات -->
-
-    
-
-    <div class="w3-container w3-padding-large" style="margin-bottom:32px" dir="rtl"  id="questions">
-      <hr style="width:70px;border:5px solid rgb(141, 138, 138)" class="w3-round">
-      <h4><b> سوالات و چالش های جدی فروشگاه های زنجیره ای !</b></h4>
-      <ul>
-        <li><p style="font-size:20px">چرا برخی فروشگاه ها عملکرد بهتری نسبت به سایر فروشگاه ها دارند؟</p>
-        <li><p style="font-size:20px">
-          در ازای هر فروشگاه چقدر درآمد باید ایجاد می کند ؟        </p>
-        <li><p style="font-size:20px">
-          تاثیر فروشگاه جدید بر سایر فروشگاه ها؟</p>
-        <li><p style="font-size:20px">
-          آیا اگر شبکه فروشگاه خود را گسترش دهم، cannibalisation فروش رخ خواهد داد؟      </p>
-        <li><p style="font-size:20px">
-          چند فروشگاه یا منطقه را می توانم در یک بازار جای دهم؟    </p>
-        <li><p style="font-size:20px">
-          چگونه می توانم فروش را برای هر فروشگاهی که در مقایسه با سایر فروشگاه ها محک زده است، تجزیه و تحلیل کنم؟      </p>
-  
-        <li><p style="font-size:20px">
-          آیا باید یکی از فروشگاه هایم را جابجا کنم یا یا از شبکه خارج کنیم و چرا؟
-        </p>
-
-        <li><p style="font-size:20px">
-          چگونه فاصله از رقبا بر رفتار خرید و فروش  تاثیر می گذارد؟  
-          </p>
-
-          <li><p style="font-size:20px">
-            تعامل بین فروشگاهی و فروش آنلاین یا ارسالی چیست؟
-            </p>
-
-            <li><p style="font-size:20px">
-              چطور می توان قلمروها و مناطق فروش محصول را بشکل مناسبی تقسیم بندی کرد؟
-              </p>
-
-              <li><p style="font-size:20px">
-                چه کسی کجا بیشتر به یک کمپین بازاریابی پاسخ می دهد؟  
-                </p>
-
-                <li><p style="font-size:20px"> ماهیت و هدف از تکنولوژی LBS(Location Based Services)  پاسخی مناسب به این  سوالات است. </p> 
-
-          
-        
-      </ul>
-      </div>
-
-
-      
-    <div class="w3-container w3-padding-large" style="margin-bottom:32px" dir="rtl"  id="questions2">
-      <hr style="width:70px;border:5px solid rgb(141, 138, 138)" class="w3-round">
-      <h4><b> سولات و چالش های جدی صنعت خرد فروشی !</b></h4>
-      <ul>
-        <li><p style="font-size:20px">چطور می توان قلمروها و مناطق فروش محصول را بشکل مناسبی تقسیم بندی کرد؟</p>
-        <li><p style="font-size:20px">
-          آیا تقاضای بالایی برای محصولات جدید شما در منطقه ای که فعالیت میکنید وجود دارد؟  </p>
-        <li><p style="font-size:20px">
-          تاثیر فروشگاه جدید بر سایر فروشگاه ها؟</p>
-        <li><p style="font-size:20px">
-          مشتریان با ارزش و سودآور شما چه کسانی و درچه منطقه فروشی هستند؟     </p>
-        <li><p style="font-size:20px">
-          چه کسی کجا بیشتر به یک کمپین بازاریابی پاسخ می دهد؟   </p>
-        <li><p style="font-size:20px">
-          برند و مصول شرکت شما در ازای هر فروشگاه چقدر درآمد ایجاد می کند ؟     </p>
-  
-        <li><p style="font-size:20px">
-          چه منطقه و ناحیه فروشی، تقاضایی کافی برای محصول شما دارد؟ برای محصولات جدید چه منطقه و فروشگاهی بهترین و یا ضعیفترین نماینده برای ارائه کالای برند شماست ؟        </p>
-
-          <li><p style="font-size:20px">ماهیت و هدف از تکنولوژی LBS(Location Based Services)  پاسخی مناسب به این  سوالات است. </p> 
-
-      </ul>
-    </div>
-      <div class="w3-row-padding w3-padding-16" id="model">
-        <div class="w3-container w3-padding-large" style="margin-bottom:32px" dir="rtl">
-          <h4><b>مراحل پیاده سازی طرح های ژئومارکتینگ</b></h4>
-        <img src="Model5.jpg" width="650" height="500"class="w3-hover-opacity" style="display: block; margin-right: auto; margin-left: auto" onclick="onClick(this)" alt=" Model">
-        <div class="w3-container w3-white">
+    <div class="w3-section  w3-padding-2">
+      <div class="container2">
+        <div class="w3-section  w3-padding-2" dir="rtl">
+          <a href="https://aahmadi88.github.io/chainmap/" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"><button class="btn"> وب اپلیکیشن صنعت  بانکداری : بانک ها (Demo)</button></a>
         </div>
       </div>
+  
+      <div class="container">
+        <div class="w3-section  w3-padding-2" dir="rtl">
+          <a href="https://aahmadi88.github.io/chainmap/" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"><button class="btn"> وب اپلیکیشن صنعت خرده فروشی : فروشگاه ها (Demo)</button></a>
+        </div>
+      </div>
+    </div> 
+  </header>
+
+  </div>
+
+  <div class="bg">
+    
 
   </div>
 
@@ -257,149 +125,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
 
   
-
-
  
-   
-  <!-- ژئومارکتینگ و علوم داده   -->
-
-  <div class="w3-row-padding w3-padding-16" id="ML">
-    <hr style="width:50px;border:5px solid rgb(141, 138, 138)" class="w3-round" dir="rtl">
-
-    <div class="w3-container w3-padding-large" style="margin-bottom:32px" dir="rtl">
-      <h4><b> ژئومارکتینگ و علوم داده </b></h4>
-      <ul>
-        <li><p style="font-size:20px"> مدل های ژئومارکتینگ جامع ودقیق هستند: به دلیل استفاده از پارامترهای ورودی جغرافیایی وغیر جغرافیایی به طورهمزمان</p>
-        <li><p style="font-size:20px">
-          اکثرخروجی ها نقشه های دیجیتال هستند که به تیم تحلیل بازار و صاحبان مشاغل اجازه می دهد تا بازار خود را از پلت فرم و منظری متفاوت تجزیه و تحلیل ومشاهده کنند
-        </p>
-        <li><p style="font-size:20px">
-          کاهش overfitting : به دلیل استفاده ازوردی های Geobase  </p>
-        <li><p style="font-size:20px">
-          یافتن متغییرهای تاثیرگزارجدید </p>
-        <li><p style="font-size:20px">
-          ژئومارکتینگ دربسیارازمواردمانند طبقه بندی بازارهدف، نمونه ها، پیش بینی ها،مناطق فروش، برآورد تقاضا برای انواع محصول و ژئودموگرافیک، تحلیل رفتار مصرف کنندگان در نواحی متفاوت ، cannibalization واولویت توزیع استفاده می شود </p>
-      </ul>
-    </div>
-    <img src="Model3.jpg" width="900" height="300"class="w3-hover-opacity" style="display: block; margin-right: auto; margin-left: auto" onclick="onClick(this)" alt=" Model">
-    <div class="w3-container w3-white">
-    </div>
-  </div>
-
-  <!-- Spatial Decision-Support Systems (SDSS)
-  --> 
-
-  <div>
-    <div class="w3-row-padding w3-padding-16" id="sdss">
-      <hr style="width:50px;border:5px solid rgb(141, 138, 138)" class="w3-round">
-      <div class="w3-container w3-padding-large" style="margin-bottom:32px" dir="rtl">
-        <h4><b> Spatial Decision-Support Systems (SDSS)</b></h4>
-        <ul>
-          <li><p style="font-size:20px"> روش‌های ژئومارکتینگ تنها به تصمیم‌گیری مکان محدود نمی‌شوند، این مدل ها با ترکیب با سایرمدل ها ، جامعیت و دقت مدل های تصمیم‌گیری را، به جهت استفاده ازنقشه های تحلیلی وارتباط بین عوامل تاثیرگزار بازار رقابت ، دربسیاری از جنبه ها  به نحو چشمگیری ارتقاع می دهد</p>
-          <li><p style="font-size:20px">  
-            پایگاه داده مکانی (جغرافیایی) مانند پایگاه دادهای رایج است، اما برای ایجاد ستون های جدید و ارتباط بین محصولات، مشتریان، مناطق فروش،مناطق بالقوه وسطح رقابت پیوندهای(Foreign key)  را برای متغییرهای مکانی و غیرمکانی ایجاد می کند  </p>
-        </ul>
-      </div>
-    <div>
-
-
-  <!-- Bank --> 
-
-  <div>
-    <div class="w3-row-padding w3-padding-16" id="bank">
-      <hr style="width:50px;border:5px solid rgb(141, 138, 138)" class="w3-round">
-      <div class="w3-container w3-padding-large" style="margin-bottom:32px" dir="rtl">
-        <h4><b> صنعت بنکداری</b></h4>
-        <ul>
-          <li><p style="font-size:20px"> در سال های اخیر نهاد های مالی مخصوصا صنعت بانکداری در یک محیط کاملا رقابتی رو به فزاینده ای کار می کنند.در پاسخ به این بازار رقابتی و ناپایدار، شناخت همه جانبه این فضا و همچنین استفاده ازفناوری های نوین درراستای افزایش توانایی رقابتی اجتناب ناپذیراست</p>
-          <li><p style="font-size:20px">  
-            بانک ها برای پاسخ به این  دست از سوالات  و رسیدن به یک درک کامل از بازار رقابتی خود باید از فناوری های استفاده کنند که توانایی ارائه  اطلاعات در بستر مکان و فضایی جغرافیایی را داشته باشد. دراین بین سیستم اطلاعات جغرافیای  (GIS) در راستایی ناحیه بندی فعالیت ها،شناسایی مکان های مناسب برای ارائه خدمات و شعب جدید بهینه سازی مکانی ATM‏ در فضایی رقابتی،شناسایی گروها و بازار‏ های هدف در بستر ژئودموگرافیک (شناسایی و شناخت مشتریها  در بعد مکان) شناسایی بازار های هدف و تقسیم بندی آنها،شناسایی مشتری های بالقوه کمک شایانی می کند و از آنجا که همه اطلاعات بیان شده به صورت نقشه و بصوری ارئه می شود، می تواند موقعیت منحصر به فرد بانک را نسبت به بانک های رقیب در یک محل خاص نمایش دهد،که در نهایت این نقشه ها به خاطر روشن کردن ابعاد بصری ذهن در کشف روابط علت و معلولی و و ارتقاع سیستم تصمیم گیر بسیار موثر است.
-          </p>
-        </ul>
-        <img src="bank1.jpg" width="650" height="500"class="w3-hover-opacity" style="display: block; margin-right: auto; margin-left: auto" onclick="onClick(this)" alt=" Bank">
-        <div class="w3-container w3-white">
-      </div>
-    <div>
-
-
-
-</div>
-
-
-
-
-<div class="w3-container w3-padding-large" style="margin-bottom:32px"   id="webapp" >
-
-  <hr> 
-    <h4>وب اپلیکیشن (Demo)</h4>
-    <div class="w3-section w3-bottombar w3-padding-16">
-      <a href="https://aahmadi88.github.io/chainmap/" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white"><button class="w3-button w3-white"> وب اپلیکیشن صنعت خرده فروشی : فروشگاه ها (Demo)</button></a>
-    </div>
-</div>
-
-
-  <!-- Contact Section -->
-  <div class="w3-container w3-padding-large w3-grey">
-    <h4 id="contact"><b>Contact Me</b></h4>
-    <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
-      <div class="w3-third w3-dark-grey">
-        <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
-        <p>email@email.com</p>
-      </div>
-    </div>
-    <hr class="w3-opacity">
-    <form action="/action_page.php" target="_blank">
-      <div class="w3-section">
-        <label>Name</label>
-        <input class="w3-input w3-border" type="text" name="Name" required>
-      </div>
-      <div class="w3-section">
-        <label>Email</label>
-        <input class="w3-input w3-border" type="text" name="Email" required>
-      </div>
-      <div class="w3-section">
-        <label>Message</label>
-        <input class="w3-input w3-border" type="text" name="Message" required>
-      </div>
-      <button type="submit" class="w3-button w3-black w3-margin-bottom"><i class="fa fa-paper-plane w3-margin-right"></i>Send Message</button>
-    </form>
-  </div>
-
- 
-  
-  <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
-
-<!-- End page content -->
-</div>
-
-<!-- Footer -->
-<footer class="w3-container w3-padding-32 w3-dark-grey" >
-  <div class="w3-row-padding" >
-    <div class="w3-third" >
-      <h3> عناوین</h3>
-      <p><a href="#portfolio" onclick="w3_close()">نقشه ها</a></p>
-      <p><a href="#about" onclick="w3_close()" > چرا ژئومارکتینگ</a> 
-      <p><a href="#ML" onclick="w3_close()" >ژئومارکتینگ و علوم داده</a>
-      <p><a href="#contact" onclick="w3_close()" >ارتباط با  ما</a>
-    </div>
-  
-    <div class="w3-third" >
-      <h3></h3>
-      <ul class="w3-ul w3-hoverable">
-        <li class="w3-padding-16">
-          <img src="books.jpg" class="w3-left w3-margin-right" style="width:50px">
-          <span class="w3-large">Geomarketing: Methods and Strategies in Spatial Marketing
-          </span><br>
-          <span>Geomarketing: Methods and Strategies in Spatial Marketing
-
-          </span>
-        </li>
-      </ul>
-    </div>
-  
-  
-    </div>
-    </footer>
 
 
 
